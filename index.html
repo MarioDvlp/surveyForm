@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="./stylesCheck.css"> -->
     <title>Survey Form</title>
 </head>
 <body>
@@ -38,7 +39,7 @@
             </div>
             
             <div class="form-group">
-                <label id="number-label" for="age">Age <span>(optional)</span></label>
+                <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
                 <input 
                 type="number" 
                 class="form-input" 
@@ -51,8 +52,8 @@
             </div>
 
             <div class="form-group">
-                <label class="form-input" for="country">Where are you from</label>
-                <select name="country" id="dropdown" >
+                <label for="country">Where are you from</label>
+                <select name="country" id="dropdown" class="form-input">
                     <option disabled selected value>Choose a country</option>
                     <option value="australia">Australia</option>
                     <option value="usa">USA</option>
@@ -67,7 +68,7 @@
             
             <div class="form-group">
                 <p>What level do you consider yourself</p>
-                    <label>
+                    <label class="b-contain">
                         <input 
                         name="level"
                         type="radio" 
@@ -103,7 +104,7 @@
             </div>
             <div class="form-group">
                 <p>Choose your favorite music</p>
-                <label>
+                <label class="b-contain">
                     <input 
                     name="music"
                     type="checkbox" 
@@ -159,8 +160,9 @@
                 name="comments" 
                 id="input-textarea" 
                 cols="50" 
-                rows="8"
+                rows="5"
                 placeholder="Enter your comment..."
+                class="form-textarea"
                 ></textarea>
             </div>
             <div class="form-group">
